@@ -2,6 +2,5 @@ Documentation
 -------------
 
 .. toctree::
-   :glob:
 
-   markdown
+   README.md
