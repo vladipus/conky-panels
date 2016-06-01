@@ -1,25 +1,26 @@
-# Features <a name='#features'/>
+# Features
 
+* Clean design. No excesses, only the needed information.
 * Modular. Individual panels may be turned on and off, be repositioned on screen.
+* Customizable. Main colors can be changed for all panels at the same time.
 * Wallpaper-agnostic. May be placed on any wallpaper and still be readable.
-* Customizeable. Main colors can be changed for all panels at the same time.
 
 
-# Requirements <a name='#requirements'/>
+# Requirements
 
-## Fonts <a name='#required-fonts'/>
+## Fonts
 
-### Droid Sans <a name='#droid-font'/>
+### Droid Sans
 
 The Droid font is used for textual information: <https://www.google.com/fonts/specimen/Droid+Sans>
 
 
-### Font Awesome <a name='#font-awesome'/>
+### Font Awesome
 
 The FontAwesome font is used to draw the icons. Get it via apt: `sudo apt install fonts-font-awesome`
 
 
-## hddtemp <a name='#hddtemp'/>
+## hddtemp
 
 `hddtemp` is needed for hard disk temperature monitoring, if you use the HDD panel.
 
@@ -74,5 +75,5 @@ Go to the `-- Filesystems --` paragraph. Edit the list of mount points and add/r
 
 Go the `-- Disk Usage --` paragraph. Edit the list of disks to be monitored and add/remove the items accordingly.
 
-In order for disk temperature to be working, [hddtemp](#hddtemp-installation) has to be installed and configured appropriately.
+In order for disk temperature to be working, [hddtemp](#hddtemp) has to be installed and configured appropriately.
 
