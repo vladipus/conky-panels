@@ -53,7 +53,7 @@ ${font}${voffset 71}
     conky.text = conky.text .. (graph_template % {device=device})
 end
 
--- Adjust the bottom border.
+-- Bottom Padding --
 -- Decrease the value after 'voffset' to bring the border up.
 conky.text = conky.text .. "${voffset -110}"
 

@@ -29,6 +29,8 @@ local bar_template = [[
 ${color &{brand}}CPU ${color &{main}} ${cpu cpu0}%  ${cpubar cpu0 10,}
 ]]
 
+conky.text = bar_template
+
 -- The main CPU graph.
 local graph_template = [[
 ${color &{main}}\
@@ -39,6 +41,8 @@ ${voffset -21}${alignr 4}${font &{font}:size=24}\
 ${color &{brand}}${hwmon temp 1}°\
 ${font}${voffset 75}
 ]]
+
+conky.text = conky.text .. graph_template 
 
 -- The temperatures of individual cores (not used).
 local core_temperatures_template = [[
@@ -52,31 +56,30 @@ ${color &{brand}}${exec cat /sys/devices/platform/coretemp.0/hwmon/hwmon0/temp5_
 ${hwmon temp 5}°
 ]]
 
+-- Individual Cores --
+
 -- The graphs for individual cores.
 local core_graphs_template = [[
+${voffset -19}\
 ${color &{main}}\
-${voffset -19}\
-${cpugraph cpu1 50,100 &{brand} &{main}}\
-${cpugraph cpu2 50,100 &{brand} &{main}}\
-${cpugraph cpu3 50,100 &{brand} &{main}}\
-${cpugraph cpu4 50,100 &{brand} &{main}}
-${voffset -19}\
-${cpugraph cpu5 50,100 &{brand} &{main}}\
-${cpugraph cpu6 50,100 &{brand} &{main}}\
-${cpugraph cpu7 50,100 &{brand} &{main}}\
-${cpugraph cpu8 50,100 &{brand} &{main}}\
-${voffset -45}
+${cpugraph cpu&{index1} 50,100 &{brand} &{main}}\
+${cpugraph cpu&{index2} 50,100 &{brand} &{main}}\
+${cpugraph cpu&{index3} 50,100 &{brand} &{main}}\
+${cpugraph cpu&{index4} 50,100 &{brand} &{main}}\
+${voffset -58}
+${color &{dimmed}}\
+${goto 20}Core &{index1}\
+${goto 120}Core &{index2}\
+${goto 220}Core &{index3}\
+${goto 320}Core &{index4}\
+${voffset 39}
 ]]
 
--- The individual core numbers.
-local core_numbers_template = [[
-${color &{dimmed}}\
-${voffset -60}\
-${goto 20}Core 1 ${goto 120}Core 2 ${goto 220}Core 3 ${goto 320}Core 4
-${voffset 32}\
-${goto 20}Core 5 ${goto 120}Core 6 ${goto 220}Core 7 ${goto 320}Core 8\
-${voffset -12}
-]]
+-- First four cores. Comment-out if not needed.
+conky.text = conky.text .. (core_graphs_template % {index1='1', index2='2', index3='3', index4='4'})
+-- Last four cores. Comment-out if not needed.
+conky.text = conky.text .. (core_graphs_template % {index1='5', index2='6', index3='7', index4='8'})
+
 
 -- The frequencies of individual cores (not used).
 local core_frequencies_template = [[
@@ -89,26 +92,21 @@ ${goto 51}${freq_g 5}GHz ${goto 151}${freq_g 6}GHz ${goto 251}${freq_g 7}GHz ${g
 
 -- The top processes.
 local top_template = [[
-${voffset 48}\
 ${color &{main}}${top name 1}${color &{brand}}${alignr 200}${top cpu 1}%
 ${color &{main}}${top name 3}${color &{brand}}${alignr 200}${top cpu 3}%
 ${voffset -38}\
 ${goto 220}${color &{main}}${top name 2}${color &{brand}}${alignr}${top cpu 2}%
-${goto 220}${color &{main}}${top name 4}${color &{brand}}${alignr}${top cpu 4}%\
-${voffset -22}
+${goto 220}${color &{main}}${top name 4}${color &{brand}}${alignr}${top cpu 4}%
 ]]
+
+conky.text = conky.text .. top_template
+
+-- Bottom Padding --
+-- Decrease the value after 'voffset' to bring the border up.
+conky.text = conky.text .. "${voffset -82}"
 
 -- The resulting template should be in this variable.
 conky.text =
 (
- bar_template ..
- graph_template ..
- core_graphs_template ..
- core_numbers_template ..
- top_template
+ conky.text
 ) % {font=font, brand=brand_color, main=main_color, dimmed=dimmed_color}
-
--- Adjust the bottom border.
--- Decrease the value after 'voffset' to bring the border up.
-conky.text = conky.text .. "${voffset -56}"
-

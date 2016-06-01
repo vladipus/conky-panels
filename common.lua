@@ -10,10 +10,29 @@ getmetatable("").__mod = interp
 width=400
 
 -- Named color definitions in the form of RRGGBB.
+
+-- The main Icy theme.
 main_color='FFFFFF'
 brand_color='2DACD4'
 dimmed_color='A0A0A0'
 background_color='000000'
+
+--[[
+-- Hot theme. Uncomment to use.
+main_color='FF8A00'
+brand_color='FF2600'
+dimmed_color='B1133B'
+background_color='000000'
+]]
+
+--[[
+-- Vitamin theme. Uncomment to use.
+main_color='A6FF00'
+brand_color='00DC40'
+dimmed_color='009C84'
+background_color='000000'
+]]
+
 
 -- The main font.
 font='Droid Sans'

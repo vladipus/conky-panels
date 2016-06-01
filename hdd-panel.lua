@@ -85,7 +85,7 @@ ${goto 220}${color &{main}}${top_io name 4}${color &{brand}}${alignr}${top_io io
 
 conky.text = conky.text .. top_template
 
--- Adjust the bottom border.
+-- Bottom Padding --
 -- Decrease the value after 'voffset' to bring the border up.
 conky.text = conky.text .. "${voffset -30}"
 
