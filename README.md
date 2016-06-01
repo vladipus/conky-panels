@@ -24,24 +24,24 @@ The FontAwesome font is used to draw the icons. Get it via apt: `sudo apt instal
 `hddtemp` is needed for hard disk temperature monitoring, if you use the HDD panel.
 
 
-### Installation <a name='hddtemp-installation'/>
+### Installation
 
 In Ubuntu you can install the `hddtemp` tool via apt: `sudo apt install hddtemp`
 
 
-### <a name='hddtemp-configuration'/>Configuration
+### Configuration
 
 If needed, reconfigure `hddtemp` to allow usage as a non-root user: `sudo dpkg-reconfigure hddtemp`
 
 **Warning**. The temperature data is sensitive and it may not be safe to share it with non-root users if the PC is used as a public server, for example.
 
 
-## <a name='conky-manager'/>Conky Manager
+## Conky Manager
 
 It is recommended to use the [Conky Manager]() app to turn on and off individual panels and to auto-start them on session start.
 
 
-### <a name='conky-manager-installation'/>Installation
+### Installation
 
 The package can be found in this PPA: <https://launchpad.net/~teejee2008/+archive/ubuntu/ppa>
 
@@ -49,28 +49,28 @@ The package can be found in this PPA: <https://launchpad.net/~teejee2008/+archiv
 2. Install the app: `sudo apt-get install conky-manager`
 
 
-# <a name='installation'/>Installation
+# Installation
 
 Copy the `ru.turbanov.conky` folder to your home directory at `~/.conky`. Launch the Conky Manager app and refresh the list. Activate the needed panels.
 
 
-# Configuration <a name='configuration'/>
+# Configuration
 
 Feel hacky about configuring the panel conky files. The main common configuration is in the `common.lua` file. You can set the main colors there.
 Configure the screen positions of individual panels by changing their corresponging `-panel.lua` files. Set the `gap_x` and `gap_y` and `alignment` variables accordingly.
 
 
-## HDD <a name='hdd-configuration'/>
+## HDD
 
 Open the `hdd-panel.lua` file to edit the configuration of the HDD panel.
 
 
-### Filesystems <a name='hdd-filesystems-configuration'/>
+### Filesystems
 
 Go to the `-- Filesystems --` paragraph. Edit the list of mount points and add/remove the filesystem items according to your system.
 
 
-### Usage <a name='hdd-usage-configuration'/>
+### Usage
 
 Go the `-- Disk Usage --` paragraph. Edit the list of disks to be monitored and add/remove the items accordingly.
 
