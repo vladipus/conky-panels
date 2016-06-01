@@ -1,6 +1,9 @@
 # Features
 
+![screenshot](images/screenshot.png)
+
 * Clean design. No excesses, only the needed information.
+* Easy installation and usage. Detailed documentation provided.
 * Modular. Individual panels may be turned on and off, be repositioned on screen.
 * Customizable. Main colors can be changed for all panels at the same time.
 * Wallpaper-agnostic. May be placed on any wallpaper and still be readable.
