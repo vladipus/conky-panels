@@ -19,17 +19,17 @@ The Droid font is used for textual information: <https://www.google.com/fonts/sp
 The FontAwesome font is used to draw the icons. Get it via apt: `sudo apt install fonts-font-awesome`
 
 
-## <a name='hddtemp'> hddtemp
+## hddtemp
 
 `hddtemp` is needed for hard disk temperature monitoring, if you use the HDD panel.
 
 
-### Installation {#hddtemp-installation}
+### <a name='hddtemp-installation'/>Installation
 
 In Ubuntu you can install the `hddtemp` tool via apt: `sudo apt install hddtemp`
 
 
-### Configuration {#hddtemp-installation}
+### <a name='hddtemp-configuration'/>Configuration
 
 If needed, reconfigure `hddtemp` to allow usage as a non-root user: `sudo dpkg-reconfigure hddtemp`
 
@@ -73,4 +73,6 @@ Go to the `-- Filesystems --` paragraph. Edit the list of mount points and add/r
 ### Usage {#hdd-usage-configuration}
 
 Go the `-- Disk Usage --` paragraph. Edit the list of disks to be monitored and add/remove the items accordingly.
+
+In order for disk temperature to be working, the [hddtemp](#hddtemp-installation) has to be installed and configured appropriately.
 
