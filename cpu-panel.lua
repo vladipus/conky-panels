@@ -1,9 +1,15 @@
 --[[
 # **********************************************************************
-# Turbanov Panels / CPU
-# A simple display panel for CPU performance.
+# Conky Panels / CPU
 #
-# Original theme: http://teejeetech.blogspot.in/
+# A simple display panel to monitor CPU performance.
+# 
+# Author: Vladislav Dmitrievich Turbanov
+# Repository: https://github.com/vladipus/conky-panels
+# License: BSD
+#
+# Some elements were based on this theme:
+# http://www.teejeetech.in/2014/07/my-conky-themes-update-2.html
 # **********************************************************************
 
 This is needed to be detected in the "Conky Manager" app:

@@ -1,3 +1,16 @@
+--[[
+# **********************************************************************
+# Conky Panels / Common Configuration
+#
+# Author: Vladislav Dmitrievich Turbanov
+# Repository: https://github.com/vladipus/conky-panels
+# License: BSD
+#
+# Some elements were based on this theme:
+# http://www.teejeetech.in/2014/07/my-conky-themes-update-2.html
+# **********************************************************************
+]]
+
 -- String interpolation for inserting variables into templates.
 function interp(s, tab)
   return (s:gsub('(&%b{})', function(w) return tab[w:sub(3, -2)] or w end))
@@ -6,7 +19,7 @@ end
 getmetatable("").__mod = interp
 
 
--- Main window size in pixels.
+-- Main window size in pixels. Changing this is not recommended.
 width=400
 
 -- Named color definitions in the form of RRGGBB.
