@@ -140,3 +140,8 @@ In order for disk temperature to be working, [hddtemp](#hddtemp) has to be insta
 You can easily add your network devices by adding them into the array at the beginning of the file (separating them with a comma `,` symbol).
 
 To find out what devices are available on your system issue a `sudo ifconfig` command in the terminal. The names should be listed on the left side of the output.
+
+
+# Attributions
+
+The package was originally developed based on some of the elements from this conkies: <http://www.teejeetech.in/2014/07/my-conky-themes-update-2.html>
