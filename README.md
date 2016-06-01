@@ -19,7 +19,7 @@ The Droid font is used for textual information: <https://www.google.com/fonts/sp
 The FontAwesome font is used to draw the icons. Get it via apt: `sudo apt install fonts-font-awesome`
 
 
-## hddtemp {#hddtemp}
+## hddtemp <a name='hddtemp'>
 
 `hddtemp` is needed for hard disk temperature monitoring, if you use the HDD panel.
 

@@ -1,6 +1,5 @@
-Documentation
--------------
+===============
+ Documentation
+===============
 
-.. toctree::
-
-   README.md
+.. include:: README.md
