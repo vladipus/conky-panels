@@ -1,6 +1,6 @@
 # Features
 
-[![YouTube Video Demo](https://img.youtube.com/vi/RWfxVejHxP0/0.jpg)](https://www.youtube.com/watch?v=RWfxVejHxP0)
+[![YouTube Video Demo](images/youtube-video.png)](https://www.youtube.com/watch?v=RWfxVejHxP0)
 
 ![screenshot](images/screenshot.png)
 
