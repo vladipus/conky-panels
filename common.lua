@@ -22,6 +22,10 @@ getmetatable("").__mod = interp
 -- Main window size in pixels. Changing this is not recommended.
 width=400
 
+-- The reference position for conkies.
+ref_pos_x=(-width - 20)
+ref_pos_y=(-110)
+
 -- Named color definitions in the form of RRGGBB.
 
 -- The main Icy theme.

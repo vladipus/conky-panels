@@ -22,8 +22,8 @@ require(".common")
 conky.config={
 -- Positioning
 alignment="top_left",
-gap_x=(-width - 20),
-gap_y=200,
+gap_x=ref_pos_x,
+gap_y=ref_pos_y+318,
 }
 
 -- Merge common options.

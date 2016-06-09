@@ -24,8 +24,8 @@ devices = {'enp11s0'}
 conky.config={
 -- Positioning
 alignment="top_left",
-gap_x=(-width - 20),
-gap_y=1000,
+gap_x=ref_pos_x,
+gap_y=ref_pos_y+1095,
 }
 
 -- Merge common options.
