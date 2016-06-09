@@ -96,6 +96,8 @@ Three themes are actually built-in: `Icy`, `Hot` and `Vitamin`. To use one of th
 
 ## Placement
 
+By default, the panels are placed relative to the reference point that is set in the `common.lua` file by the `ref_pos_x` and `ref_pos_y` variables.
+
 Configure the screen positions of individual panels by changing their corresponding `<type>-panel.lua` files. Set the `gap_x` and `gap_y` and `alignment` variables accordingly.
 
 
