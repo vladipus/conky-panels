@@ -1,5 +1,7 @@
 # Features
 
+[![YouTube Video Demo](https://img.youtube.com/vi/RWfxVejHxP0/0.jpg)](https://www.youtube.com/watch?v=RWfxVejHxP0)
+
 ![screenshot](images/screenshot.png)
 
 * Clean design. No excesses, only the needed information.
@@ -16,6 +18,8 @@
 
 
 # Requirements
+
+The exact installation commands are mainly for Ubuntu (tested on 16.04 LTS) but you should be able to replace those with your distro's solution for getting the software and/or downloading/compiling it by yourself.
 
 ## Conky
 
