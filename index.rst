@@ -2,4 +2,7 @@
  Documentation
 ===============
 
-.. include:: README.md
+.. toctree::
+   :glob:
+
+   README.md
