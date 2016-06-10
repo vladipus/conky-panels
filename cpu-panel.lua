@@ -21,7 +21,7 @@ require(".common")
 
 conky.config={
 -- Positioning
-alignment="top_left",
+alignment=ref_alignment,
 gap_x=ref_pos_x,
 gap_y=ref_pos_y,
 }

@@ -23,8 +23,15 @@ getmetatable("").__mod = interp
 width=400
 
 -- The reference position for conkies.
+ref_alignment="top_left"
+ref_pos_x=(70)
+ref_pos_y=(50)
+
+-- My multi-monitor settings
+--[[
 ref_pos_x=(-width - 20)
 ref_pos_y=(-110)
+]]
 
 -- Named color definitions in the form of RRGGBB.
 
