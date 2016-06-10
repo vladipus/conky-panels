@@ -1,8 +1,11 @@
-# Features
+# Video demo and screenshot
 
 [![YouTube Video Demo](images/youtube-video.png)](https://www.youtube.com/watch?v=RWfxVejHxP0)
 
 ![screenshot](images/screenshot.png)
+
+
+# Features
 
 * Clean design. No excesses, only the needed information.
 * Easy installation and usage. Detailed documentation provided.
@@ -76,6 +79,15 @@ The package can be found in this PPA: <https://launchpad.net/~teejee2008/+archiv
 2. Install the application: `sudo apt-get install conky-manager`
 
 
+### Usage
+
+After you've installed the Conky Panels, you may activate them with Conky Manager.
+
+1. Launch the Conky Manager application. You may do so from the command line by typing: `conky-manager`
+2. Refresh the list of available conky themes. Click on the "Search for new themes" button in the toolbar.
+3. Click on the checkboxes near the individual panels to activate/deactivate them.
+
+
 # Installation
 
 Clone this repository to your Conky folder:
@@ -92,6 +104,8 @@ Gotta feel hacky about configuring the provided conkies. That is, you have to ed
 
 The main common configuration is in the `common.lua` file. You can set the main colors there. Just open the file in your favorite editor and change the numerical color values, presented in an RRGGBB format.
 
+Whenever you change any of the lua files, panels have to be re-enabled for changes to take effect. You can easily do so in Conky Manager by enabling/disabling a conky with the checkbox.
+
 
 ## Theming
 
@@ -100,7 +114,9 @@ Three themes are actually built-in: `Icy`, `Hot` and `Vitamin`. To use one of th
 
 ## Placement
 
-By default, the panels are placed relative to the reference point that is set in the `common.lua` file by the `ref_pos_x` and `ref_pos_y` variables.
+If you can't see all (any) conkies on screen, don't worry. Chances are you didn't adjust their positions.
+
+By default, the panels are placed relative to a reference point, that is set in the `common.lua` file by the `ref_pos_x` and `ref_pos_y` variables. The position values may also be negative, which can be useful for multi-monitor setups.
 
 Configure the screen positions of individual panels by changing their corresponding `<type>-panel.lua` files. Set the `gap_x` and `gap_y` and `alignment` variables accordingly.
 
