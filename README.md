@@ -137,6 +137,13 @@ By default, the CPU panel monitors 8 cores. Chances are your system has more or 
 To add or remove specific core graphs edit the `./cpu-panel.lua` file. Find an
 `-- Individual Cores --` comment and look for core pack additions. Remove some by commenting them out, or add more by copy-pasting and setting the indexes accordingly. You can get the number of available cores on your system by running the `nproc` command.
 
+### Temperature
+
+You need to go to `cpu-panel.lua` and alter this line:
+`${color &{brand}}${hwmon temp 1}°\`
+
+It may have different combos for `hwmon temp`: https://askubuntu.com/questions/235713/how-to-detect-processor-correct-temperature-in-conky
+
 
 ## HDD
 
